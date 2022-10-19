@@ -47,7 +47,7 @@
         public void q_sort(int low, int high)
         {
             int pivot, i, j;
-            if (low < high)
+            if (low > high)
                 return;
 
             //Partition the list into two parts:
@@ -55,7 +55,7 @@
             //Outher conntainning elements grather than pivot
 
             i = low + 1;
-            j =high;
+            j = high;
 
             pivot = arr[low];
 
