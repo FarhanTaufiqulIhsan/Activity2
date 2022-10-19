@@ -12,7 +12,10 @@
 
         void input()
         {
+            while (true)
+            {
 
+            }
         }
     }
 }
