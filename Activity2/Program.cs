@@ -1,1 +1,7 @@
-﻿
+﻿namespace QuickSort
+{
+    class Program
+    {
+
+    }
+}
