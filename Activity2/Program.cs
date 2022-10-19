@@ -117,5 +117,20 @@
             return (n);
         }
 
+        static void Main(string[] args)
+        {
+            //Declaring the object of the class
+            Program mylist = new Program();
+            //Accept array elements
+            mylist.input();
+            //Calling the starting function
+            //first to call Quick sort Algorithm
+            mylist.q_sort(0, mylist.getSize() - 1);
+            //Display sorted array
+            mylist.display();
+            //to exit from the console
+            Console.WriteLine("\n\nPress Enter to exit.");
+            Console.Read();
+        }
     }
 }
