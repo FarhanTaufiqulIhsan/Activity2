@@ -43,5 +43,41 @@
             arr[x] = arr[y];
             arr[y] = temp;
         }
+
+        public void q_sort(int low, int high)
+        {
+            int pivot, i, j;
+            if (low < high)
+                return;
+
+            //Partition the list into two parts:
+            //One containing elements less that or equal to pivot
+            //Outher conntainning elements grather than pivot
+
+            i = low + 1;
+            j =high;
+
+            pivot = arr[low];
+
+            while (i <= j)
+            {
+                //search for an element greater than pivot
+                while ((arr[i] <= pivot) && (i <= high))
+                {
+                    i++;
+                    cmp_count++;
+                }
+                cmp_count++;
+
+                //search for an element less than equal to pivot
+                while ((arr[j] > pivot) && (j >= low))
+                {
+                    j--;
+                    cmp_count++;
+                }
+                cmp_count++;
+
+            }
+        }
     }
 }
