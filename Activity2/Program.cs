@@ -112,6 +112,10 @@
             Console.WriteLine("\nNumber of data movements:" + mov_count);
 
         }
+        int getSize()
+        {
+            return (n);
+        }
 
     }
 }
